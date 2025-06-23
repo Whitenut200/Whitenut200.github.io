@@ -145,8 +145,8 @@ footer:
     - label: "Tableau Public"
       icon: "fab fa-fw fa-tableau Public"
       url: "https://public.tableau.com/app/profile/yu.siyeon/vizzes"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
       # url:
     # - label: "GitLab"
     #   icon: "fab fa-fw fa-gitlab"
