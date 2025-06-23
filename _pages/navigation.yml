@@ -7,7 +7,3 @@ main:
     url: /tags/
   - title: "Posts"
     url: /year-archive/
-
-#main links
-# - title: "Quick-Start Guide"
-#   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
