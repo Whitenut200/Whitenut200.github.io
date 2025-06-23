@@ -15,13 +15,13 @@ layout: single
 Makeover Monday에서 테이터를 가져와서 Tableau로 대시보드를 만들어보았습니다. 지원봉사자들에 관련된 데이터로, 연도별로 지원봉사자들이 큰 피해을 받은 상위 지역 3개를 구체적으로 보여주는 대시보드입니다.
 
 <div class='tableauPlaceholder' id='viz1750651696925'
-     style='float: right; margin: 0 0 20px 20px; width: 1200px; position: relative'>
+     style='width: 100%; max-width: 1600px; position: relative; margin: 0 auto;'>
   <noscript>
     <a href='#'>
-      <img alt='대시보드 1 ' src='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1_rss.png' style='border: none' />
+      <img alt='대시보드 1' src='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1_rss.png' style='border: none' />
     </a>
   </noscript>
-  <object class='tableauViz' style='display:none;'>
+  <object class='tableauViz' style='width: 100%; height: 900px; display: none;'>
     <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
     <param name='embed_code_version' value='3' />
     <param name='site_root' value='' />
@@ -41,20 +41,29 @@ Makeover Monday에서 테이터를 가져와서 Tableau로 대시보드를 만�
 <script type='text/javascript'>
   var divElement = document.getElementById('viz1750651696925');
   var vizElement = divElement.getElementsByTagName('object')[0];
-  if (divElement.offsetWidth > 800) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.9) + 'px';
-  } else if (divElement.offsetWidth > 500) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.9) + 'px';
+
+  // 기본 너비 최대 1600px, 최소 300px (임의 조정 가능)
+  var containerWidth = divElement.offsetWidth;
+
+  if (containerWidth >= 1600) {
+    vizElement.style.width = '1600px';
+    vizElement.style.height = '900px';
+  } else if (containerWidth >= 300) {
+    // 너비가 줄어들면 비율 유지하며 높이 조절
+    vizElement.style.width = containerWidth + 'px';
+    vizElement.style.height = (containerWidth * 900 / 1600) + 'px';
   } else {
-    vizElement.style.width = '100%';
-    vizElement.style.height = '800px';
+    // 너무 작으면 최소 크기 고정
+    vizElement.style.width = '300px';
+    vizElement.style.height = (300 * 900 / 1600) + 'px';
   }
+
+  // Tableau 스크립트 로드
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
+
 
 
 <!-- <div class='tableauPlaceholder' id='viz1750651696925' style='position: relative'><noscript><a href='#'><img alt='대시보드 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AidWorkerSecurityIncidentsmakeovermonday&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AidWorkerSecurityIncidentsmakeovermonday&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AidWorkerSecurityIncidentsmakeovermonday&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1750651696925');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='3577px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
