@@ -143,7 +143,11 @@ author:
 footer:
   links:
     - label: "Tableau Public"
+<<<<<<< HEAD
       icon:
+=======
+      # icon: "fab fa-fw fa-tableau Public"
+>>>>>>> 1ca3881b (Increase blog max-wideth to 1900px)
       url: "https://public.tableau.com/app/profile/yu.siyeon/vizzes"
     # - label: "GitHub"
     #   icon: "fab fa-fw fa-github"

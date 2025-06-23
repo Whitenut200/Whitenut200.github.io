@@ -6,4 +6,8 @@ search: false
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+<<<<<<< HEAD
 @import "minimal-mistakes"; // main partials
+=======
+@import "minimal-mistakes"; // main partials
+>>>>>>> 1ca3881b (Increase blog max-wideth to 1900px)
