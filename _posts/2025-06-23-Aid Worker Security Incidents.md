@@ -42,26 +42,23 @@ Makeover Monday에서 테이터를 가져와서 Tableau로 대시보드를 만�
   var divElement = document.getElementById('viz1750651696925');
   var vizElement = divElement.getElementsByTagName('object')[0];
 
-  // 기본 너비 최대 1600px, 최소 300px (임의 조정 가능)
-  var containerWidth = divElement.offsetWidth;
+  var containerWidth = divElement.offsetWidth; // div 너비 (예: 1280)
 
-  if (containerWidth >= 1600) {
-    vizElement.style.width = '1600px';
-    vizElement.style.height = '900px';
-  } else if (containerWidth >= 300) {
-    // 너비가 줄어들면 비율 유지하며 높이 조절
-    vizElement.style.width = containerWidth + 'px';
-    vizElement.style.height = (containerWidth * 900 / 1600) + 'px';
-  } else {
-    // 너무 작으면 최소 크기 고정
-    vizElement.style.width = '300px';
-    vizElement.style.height = (300 * 900 / 1600) + 'px';
-  }
+  var baseWidth = 1600;  // 원본 너비
+  var baseHeight = 900;  // 원본 높이
 
-  // Tableau 스크립트 로드
+  // 컨테이너 너비보다 크면 baseWidth로 고정, 아니면 컨테이너 너비로 축소
+  var finalWidth = containerWidth > baseWidth ? baseWidth : containerWidth;
+  var finalHeight = finalWidth * baseHeight / baseWidth;
+
+  vizElement.style.width = finalWidth + 'px';
+  vizElement.style.height = finalHeight + 'px';
+
+  // Tableau API 스크립트 삽입 (기존 코드 유지)
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
 </script>
 
 
