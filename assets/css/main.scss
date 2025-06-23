@@ -6,3 +6,13 @@ search: false
 
 @import "minimal-mistakes/skins/default"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page__main, .post__content {
+  max-width: 100% !important;  // 기본 제한 풀기
+  width: 100% !important;      // 최대 폭으로 설정
+}
+
+.tableauPlaceholder {
+  width: 100% !important;      // 임베딩 div도 최대 폭
+  height: auto !important;     // 높이 자동 조절
+}
