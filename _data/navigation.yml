@@ -1,6 +1,6 @@
 main:
 - title: "About"
-  url: https://Whitenut200.github.io/minimal-mistakes/about/
+  url: "https://whitenut200.github.io/minimal-mistakes/about/"
 - title: "Categories"
   url: /categories/
 - title: "Tags"

@@ -2,8 +2,9 @@
   max-width: 1700px;
   margin: 0 auto;
   padding: 0 20px;
-  overflow-x: hidden; // 👈 중요
+  overflow-x: visible;  // 이거 꼭 확인!
 }
+
 
 .tableau-responsive {
   position: relative;
