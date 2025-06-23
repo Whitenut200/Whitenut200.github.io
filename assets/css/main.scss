@@ -13,13 +13,7 @@ search: false
 }
 
 .tableauPlaceholder {
-  width: 100% !important;   // 부모 컨테이너 폭에 맞게 넓히기
-  max-width: 1200px;        // 최대 너비 제한 (원하는 값으로 조절)
-  height: 700px !important; // 높이는 적당히 맞게 조절하세요
-  margin: 0 auto;           // 가운데 정렬
-}
-
-.tableauPlaceholder object {
   width: 100% !important;
-  height: 100% !important;
+  max-width: 1200px;  // 필요에 따라 조절
+  margin: 0 auto;
 }

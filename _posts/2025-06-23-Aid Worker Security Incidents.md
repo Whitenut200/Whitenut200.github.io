@@ -42,13 +42,13 @@ Makeover Monday에서 테이터를 가져와서 Tableau로 대시보드를 만�
   var vizElement = divElement.getElementsByTagName('object')[0];
   if (divElement.offsetWidth > 800) {
     vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    vizElement.style.height = (divElement.offsetWidth * 0.9) + 'px';
   } else if (divElement.offsetWidth > 500) {
     vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    vizElement.style.height = (divElement.offsetWidth * 0.9) + 'px';
   } else {
     vizElement.style.width = '100%';
-    vizElement.style.height = '3577px';
+    vizElement.style.height = '800px';
   }
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
