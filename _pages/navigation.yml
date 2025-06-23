@@ -12,7 +12,7 @@
 #   #   url: /sitemap/
 
 
-  main:
+main:
   - title: "Tags"
     url: /tags/
 
