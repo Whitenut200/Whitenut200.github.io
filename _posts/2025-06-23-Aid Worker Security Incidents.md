@@ -14,52 +14,38 @@ layout: single
 
 Makeover Monday에서 테이터를 가져와서 Tableau로 대시보드를 만들어보았습니다. 지원봉사자들에 관련된 데이터로, 연도별로 지원봉사자들이 큰 피해을 받은 상위 지역 3개를 구체적으로 보여주는 대시보드입니다.
 
-<div class='tableauPlaceholder' id='viz1750651696925'
-     style='width: 100%; max-width: 1600px; position: relative; margin: 0 auto;'>
-  <noscript>
-    <a href='#'>
-      <img alt='대시보드 1' src='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1_rss.png' style='border: none' />
-    </a>
-  </noscript>
-  <object class='tableauViz' style='width: 100%; height: 900px; display: none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='site_root' value='' />
-    <param name='name' value='AidWorkerSecurityIncidentsmakeovermonday/1' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='ko-KR' />
-  </object>
+<div class="tableau-responsive">
+  <div class="tableauPlaceholder" id="viz1750651696925">
+    <noscript>
+      <a href='#'>
+        <img alt='대시보드' src='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1.png' />
+      </a>
+    </noscript>
+    <object class='tableauViz'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='AidWorkerSecurityIncidentsmakeovermonday/1' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='ko-KR' />
+    </object>
+  </div>
 </div>
 
 <script type='text/javascript'>
-  var divElement = document.getElementById('viz1750651696925');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-
-  var containerWidth = divElement.offsetWidth; // div 너비 (예: 1280)
-
-  var baseWidth = 1600;  // 원본 너비
-  var baseHeight = 900;  // 원본 높이
-
-  // 컨테이너 너비보다 크면 baseWidth로 고정, 아니면 컨테이너 너비로 축소
-  var finalWidth = containerWidth > baseWidth ? baseWidth : containerWidth;
-  var finalHeight = finalWidth * baseHeight / baseWidth;
-
-  vizElement.style.width = finalWidth + 'px';
-  vizElement.style.height = finalHeight + 'px';
-
-  // Tableau API 스크립트 삽입 (기존 코드 유지)
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-
+  document.getElementById('viz1750651696925').appendChild(scriptElement);
 </script>
+
+
 
 
 
