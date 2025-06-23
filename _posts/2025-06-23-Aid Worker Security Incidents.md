@@ -15,7 +15,7 @@ layout: single
 Makeover Monday에서 테이터를 가져와서 Tableau로 대시보드를 만들어보았습니다. 지원봉사자들에 관련된 데이터로, 연도별로 지원봉사자들이 큰 피해을 받은 상위 지역 3개를 구체적으로 보여주는 대시보드입니다.
 
 <div class='tableauPlaceholder' id='viz1750651696925'
-     style='float: right; margin: 0 0 20px 20px; width: 1900px; position: relative'>
+     style='float: right; margin: 0 0 20px 20px; width: 1200px; position: relative'>
   <noscript>
     <a href='#'>
       <img alt='대시보드 1 ' src='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1_rss.png' style='border: none' />
