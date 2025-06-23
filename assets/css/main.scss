@@ -1,6 +1,6 @@
-// ---
-// search: false
-// ---
+---
+search: false
+---
 
 @charset "utf-8";
 
@@ -8,11 +8,18 @@
 @import "minimal-mistakes"; // main partials
 
 .page__main, .post__content {
-  max-width: 100% !important;  // 기본 제한 풀기
+  max-width: 1200px !important;  // 기본 제한 풀기
   width: 100% !important;      // 최대 폭으로 설정
 }
 
 .tableauPlaceholder {
-  width: 100% !important;      // 임베딩 div도 최대 폭
-  height: auto !important;     // 높이 자동 조절
+  width: 100% !important;   // 부모 컨테이너 폭에 맞게 넓히기
+  max-width: 1200px;        // 최대 너비 제한 (원하는 값으로 조절)
+  height: 700px !important; // 높이는 적당히 맞게 조절하세요
+  margin: 0 auto;           // 가운데 정렬
+}
+
+.tableauPlaceholder object {
+  width: 100% !important;
+  height: 100% !important;
 }
