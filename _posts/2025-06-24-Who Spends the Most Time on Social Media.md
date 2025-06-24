@@ -14,17 +14,17 @@ layout: single
 <div class='tableauPlaceholder' id='vizResponsive' style='position: relative; width: 100%; height: 0; padding-bottom: 62.5%;'>
   <noscript>
     <a href='#'>
-      <img alt='대시보드 1' src='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1_rss.png' style='border: none' />
+      <img alt='대시보드 1' src='https://public.tableau.com/static/images/Ai/WhoSpendstheMostTimeonSocialMediamakeovermonday/1/1_rss.png' style='border: none' />
     </a>
   </noscript>
   <object class='tableauViz' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'>
     <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
     <param name='embed_code_version' value='3' />
     <param name='site_root' value='' />
-    <param name='name' value='AidWorkerSecurityIncidentsmakeovermonday/1' />
+    <param name='name' value='WhoSpendstheMostTimeonSocialMediamakeovermonday/1' />
     <param name='tabs' value='no' />
     <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1.png' />
+    <param name='static_image' value='https://public.tableau.com/static/images/Ai/WhoSpendstheMostTimeonSocialMediamakeovermonday/1/1.png' />
     <param name='animate_transition' value='yes' />
     <param name='display_static_image' value='yes' />
     <param name='display_spinner' value='yes' />
@@ -38,7 +38,6 @@ layout: single
   var vizElement = divElement.getElementsByTagName('object')[0];
   vizElement.style.width = '100%';
   vizElement.style.height = '100%';
-
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
