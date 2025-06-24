@@ -1,13 +1,13 @@
 ---
-title: "[Makeover Monday] Aid Worker Security Incidents Dashboard"
+title: "Aid Worker Security Incidents Dashboard"
 excerpt: "Makeover Monday 데이터를 통해 Aid Worker Security Incidents Dashboard 만들기①"
 date: 2025-06-23T13:13:00+09:00
 last_modified_at: 2025-06-23T13:13:00+09:00
 categories:
-  - Tableau Dashboard
+  - Makeovermonday
 tags:
   - Tableau
-  - Makeover monday
+  - Makeovermonday
 layout: single
 
 ---

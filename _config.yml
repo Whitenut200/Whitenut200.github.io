@@ -22,7 +22,7 @@ title                    : "Nut Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Y.Siyeon"
-description              : "This blog is Siyeon's dashboard collection."
+description              : 
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 #baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -116,7 +116,7 @@ analytics:
 author:
   name             : "Y.Siyeon"
   avatar           : "/assets/images/nut.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "This blog is Siyeon's dashboard collection."
+  bio              : 
   location         : "Seoul/Korea"
   email            :
   links:
@@ -319,6 +319,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true # true
       share: true
       related: true
+      sidebar_main:
+       nav: "docs"
