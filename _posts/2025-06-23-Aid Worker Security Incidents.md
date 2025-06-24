@@ -42,9 +42,9 @@ layout: single
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
-Makeovermonday에 올라온 11월 1주차 주제인 Individuals using the Internet (% of population) 에 관한 대시보드를 구축하였다. 데이터셋은 Makeovermonday 사이트에 올라온 데이터를 사용하여 대시보드를 구축하였다.
+Makeovermonday에 올라온 11월 3주차 주제인 Aid Worker Security Incidents 에 관한 대시보드를 구축하였다. 데이터셋은 Makeovermonday 사이트에 올라온 데이터를 사용하였으며 기사(Aid Worker Security Incidents report)를 통해 배경 지식을 습득한 후 대시보드를 구축하였다.
 
-<!-- ## 1. 목표 및 니즈 파악
+## 1. 목표 및 니즈 파악
 
 해당 대시보드는 총 18개의 국가 중에서 Internet 사용량을 알아볼 수 있으며 으로 자원봉사와 지원 활동에 종사하는 이들의 희생은 점점 더 큰 사회적 문제로 부각되고 있습니다.  
 매년 특정 국가에서 지원활동종사자 희생자 수가 급증하며, 경각심을 고취하기 위해 시각적 데이터 분석 도구인 **대시보드**를 기획하고자 합니다.
@@ -125,7 +125,7 @@ Makeovermonday에 올라온 11월 1주차 주제인 Individuals using the Intern
 
 - 성별 차틀르 굳이 막대로 표현한 것이 너무 평범해보이며, **파이나 다른 차트**로 나타내면 좋을 것으로 판단됨
 - 막대그래프를 2016~2024년으로 고정시킨 것이 별로이며, 필터를 움직이면 연도도 **최근 10년**으로 바뀌게 설정하면 좋을 듯
-- 그리고 **상위 4-15위까지의 국가**라고 따로 표기해야 이해하기 편할듯 -->
+- 그리고 **상위 4-15위까지의 국가**라고 따로 표기해야 이해하기 편할듯
 
 
 

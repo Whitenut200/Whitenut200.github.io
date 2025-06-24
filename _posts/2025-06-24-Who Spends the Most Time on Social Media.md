@@ -1,6 +1,6 @@
 ---
-title: "[Makeover Monday] Aid Worker Security Incidents Dashboard"
-excerpt: "Makeover Monday 데이터를 통해 Aid Worker Security Incidents Dashboard 만들기①"
+title: "[Makeover Monday] Who Spends the Most Time on Social Media?"
+excerpt: "Makeover Monday 데이터를 통해 Who Spends the Most Time on Social Media? 대시보드 만들기①"
 date: 2025-06-23T13:13:00+09:00
 last_modified_at: 2025-06-23T13:13:00+09:00
 categories:
@@ -43,9 +43,9 @@ layout: single
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
-Makeovermonday에 올라온 11월 3주차 주제인 Aid Worker Security Incidents 에 관한 대시보드를 구축하였다. 데이터셋은 Makeovermonday 사이트에 올라온 데이터를 사용하였으며 기사(Aid Worker Security Incidents report)를 통해 배경 지식을 습득한 후 대시보드를 구축하였다.
+Makeovermonday에 올라온 11월 1주차 주제인 Individuals using the Internet (% of population) 에 관한 대시보드를 구축하였다. 데이터셋은 Makeovermonday 사이트에 올라온 데이터를 사용하여 대시보드를 구축하였다.
 
-## 1. 목표 및 니즈 파악
+<!-- ## 1. 목표 및 니즈 파악
 
 전 세계적으로 자원봉사와 지원 활동에 종사하는 이들의 희생은 점점 더 큰 사회적 문제로 부각되고 있습니다.  
 매년 특정 국가에서 지원활동종사자 희생자 수가 급증하며, 경각심을 고취하기 위해 시각적 데이터 분석 도구인 **대시보드**를 기획하고자 합니다.
@@ -126,6 +126,6 @@ Makeovermonday에 올라온 11월 3주차 주제인 Aid Worker Security Incident
 
 - 성별 차틀르 굳이 막대로 표현한 것이 너무 평범해보이며, **파이나 다른 차트**로 나타내면 좋을 것으로 판단됨
 - 막대그래프를 2016~2024년으로 고정시킨 것이 별로이며, 필터를 움직이면 연도도 **최근 10년**으로 바뀌게 설정하면 좋을 듯
-- 그리고 **상위 4-15위까지의 국가**라고 따로 표기해야 이해하기 편할듯
+- 그리고 **상위 4-15위까지의 국가**라고 따로 표기해야 이해하기 편할듯 -->
 
 <!-- <div class='tableauPlaceholder' id='viz1750651696925' style='position: relative'><noscript><a href='#'><img alt='대시보드 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AidWorkerSecurityIncidentsmakeovermonday&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AidWorkerSecurityIncidentsmakeovermonday&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AidWorkerSecurityIncidentsmakeovermonday&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1750651696925');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='3577px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
