@@ -1,6 +1,6 @@
 ---
 title: "[Makeover Monday] Who Spends the Most Time on Social Media?"
-excerpt: "Makeover Monday 데이터를 통해 Who Spends the Most Time on Social Media? 대시보드 만들기①"
+excerpt: "Makeover Monday 데이터를 통해 Who Spends the Most Time on Social Media? 대시보드 만들기②"
 date: 2025-06-25T13:13:00+09:00
 last_modified_at: 2025-06-25T13:13:00+09:00
 categories:

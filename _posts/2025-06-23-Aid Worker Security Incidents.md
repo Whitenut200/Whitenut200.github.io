@@ -1,6 +1,6 @@
 ---
 title: "[Makeover Monday] Aid Worker Security Incidents Dashboard"
-excerpt: "Makeover Monday 데이터를 통해 Aid Worker Security Incidents 대시보드 만들기②"
+excerpt: "Makeover Monday 데이터를 통해 Aid Worker Security Incidents 대시보드 만들기①"
 date: 2025-06-23T17:00:00+09:00
 last_modified_at: 2025-06-23T17:00:00+09:00
 categories:
