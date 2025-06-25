@@ -116,7 +116,7 @@ analytics:
 author:
   name             : "Y.Siyeon"
   avatar           : "/assets/images/nut.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : 
+  bio              :  
   location         : "Seoul/Korea"
   email            :
   links:

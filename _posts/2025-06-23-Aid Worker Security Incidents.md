@@ -43,6 +43,7 @@ layout: single
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
+
 Makeovermonday에 올라온 11월 3주차 주제인 Aid Worker Security Incidents 에 관한 대시보드를 구축하였다. 데이터셋은 Makeovermonday 사이트에 올라온 데이터를 사용하였으며 기사(Aid Worker Security Incidents report)를 통해 배경 지식을 습득한 후 대시보드를 구축하였다.
 
 ## 1. 목표 및 니즈 파악
