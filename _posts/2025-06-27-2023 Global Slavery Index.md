@@ -14,7 +14,7 @@ layout: single
 <div class='tableauPlaceholder' id='vizResponsive' style='position: relative; width: 100%; height: 0; padding-bottom: 62.5%;'>
   <noscript>
     <a href='#'>
-      <img alt='대시보드 1' src='https://public.tableau.com/static/images/Ai/WhoSpendstheMostTimeonSocialMediamakeovermonday/1/1_rss.png' style='border: none' />
+      <img alt='대시보드 1' src='https://public.tableau.com/static/images/TT/TTBJRSPW2/1_rss.png' style='border: none' />
     </a>
   </noscript>
   <object class='tableauViz' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'>
@@ -24,7 +24,7 @@ layout: single
     <param name='name' value='WhoSpendstheMostTimeonSocialMediamakeovermonday/1' />
     <param name='tabs' value='no' />
     <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/Ai/WhoSpendstheMostTimeonSocialMediamakeovermonday/1/1.png' />
+    <param name='static_image' value='https://public.tableau.com/static/images/TT/TTBJRSPW2/1_rss.png' />
     <param name='animate_transition' value='yes' />
     <param name='display_static_image' value='yes' />
     <param name='display_spinner' value='yes' />
@@ -119,37 +119,5 @@ Social Media는 이제 단순한 소통 수단을 넘어 사회, 정치, 경제�
 - 달리기 시각화를 좀 더 달리고 있는 모습이 보이도록 디자인하고 **상위10%, 하위 10%**에 해당하는 차트라고 **따로 표기**하는 것이 좋아보임
 - 간단한 파이, 막대 차트가 아닌 좀더 **차이를 효율적으로 보일 수 있는 차트**를 선택하는 것이 좋아보임 -->
 
-
-
-
-<div class='tableauPlaceholder' id='vizResponsive' style='position: relative; width: 100%; height: 0; padding-bottom: 62.5%;'>
-  <noscript>
-    <a href='#'>
-      <img alt='대시보드 1' src='https://public.tableau.com/static/images/TT/TTBJRSPW2/1_rss.png' style='border: none' />
-    </a>
-  </noscript>
-  <object class='tableauViz' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='path' value='sharedTTBJRSPW2' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/TT/TTBJRSPW2/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='ko-KR' />
-  </object>
-</div>
-<script type='text/javascript'>
-  var divElement = document.getElementById('vizResponsive');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width = '100%';
-  vizElement.style.height = '100%';
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
 
 <!-- <div class='tableauPlaceholder' id='viz1751014173588' style='position: relative'><noscript><a href='#'><img alt='대시보드 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TT&#47;TTBJRSPW2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;TTBJRSPW2' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TT&#47;TTBJRSPW2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1751014173588');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1600px';vizElement.style.height='927px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1600px';vizElement.style.height='927px';} else { vizElement.style.width='100%';vizElement.style.height='2577px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
