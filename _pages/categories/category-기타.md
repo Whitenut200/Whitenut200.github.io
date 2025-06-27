@@ -7,7 +7,7 @@ sidebar_main: true
 types: posts
 ---
 
-{% assign posts = site.categories['Tableau']%}
+{% assign posts = site.categories['기타']%}
 {% for post in posts %}
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
