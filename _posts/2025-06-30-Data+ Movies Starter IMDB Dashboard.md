@@ -15,7 +15,7 @@ layout: single
 
 ---
 <div class="tableauPlaceholder" id="vizResponsive"
-     style="position: relative; width: 100%; padding-bottom: 59.5%; height: 0;">
+     style="position: relative; width: 100%; padding-bottom: 60%; height: 0;">
   <noscript>
     <a href="#">
       <img alt="대시보드 1"
@@ -151,5 +151,7 @@ layout: single
 - 웹의 느낌을 내려고 했지만 데이터가 커서 그런지 이동하는 딜레이시간이 매우 길어짐
 - 대시보드 전반적으로 디테일한 설명이 부족해보임
 - Movie 대시보드에 이미지 처리하는 방법을 다시 생각해봐야될듯 (지금은 뒤에 url만 띄여진 시트를 넣어놓고 이미지 시트를 앞에 부동으로 띄여놔서 뒤에 url 시트에 마우스 오버를 할 때 이미지가 바뀌는 형태)
+
+**주제 정해서 Remake할 예정, 크기 오차로 인해 스크롤 생김(해결예정)**
 
 <!-- <div class='tableauPlaceholder' id='viz1751260123178' style='position: relative'><noscript><a href='#'><img alt='표지 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DataMoviesStarterDashboard_17446391842830&#47;sheet0&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DataMoviesStarterDashboard_17446391842830&#47;sheet0' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DataMoviesStarterDashboard_17446391842830&#47;sheet0&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1751260123178');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1680px';vizElement.style.height='1027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1680px';vizElement.style.height='1027px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
