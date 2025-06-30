@@ -3,6 +3,9 @@ title: "[Makeover Monday][Remake] Who Spends the Most Time on Social Media?"
 excerpt: "Makeover Monday 데이터를 통해 Who Spends the Most Time on Social Media? 대시보드 만들기③ - Remake"
 date: 2025-06-27T13:13:00+09:00
 last_modified_at: 2025-06-27T13:13:00+09:00
+toc: true
+toc_label: "목차"
+toc_sticky: true
 categories:
   - Makeovermonday
 tags:
@@ -11,37 +14,46 @@ tags:
 layout: single
 
 ---
-<div class='tableauPlaceholder' id='vizResponsive' style='position: relative; width: 100%; height: 0; padding-bottom: 62.5%;'>
+<div class="tableauPlaceholder" id="vizResponsive"
+     style="position: relative; width: 100%; padding-bottom: 62.5%; height: 0;">
   <noscript>
-    <a href='#'>
-      <img alt='대시보드 1' src='https://public.tableau.com/static/images/Wh/WhoSpendstheMostTimeonSocialMediamakeovermondayRemake/1/1_rss.png' style='border: none' />
+    <a href="#">
+      <img alt="대시보드 1"
+           src="https://public.tableau.com/static/images/Wh/WhoSpendstheMostTimeonSocialMediamakeovermondayRemake/1/1_rss.png"
+           style="border: none" />
     </a>
   </noscript>
-  <object class='tableauViz' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='site_root' value='' />
-    <param name='name' value='WhoSpendstheMostTimeonSocialMediamakeovermondayRemake/1' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/Ai/WhoSpendstheMostTimeonSocialMediamakeovermondayRemake/1/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='ko-KR' />
+  <object class="tableauViz"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+    <param name="embed_code_version" value="3" />
+    <param name="site_root" value="" />
+    <param name="name" value="WhoSpendstheMostTimeonSocialMediamakeovermondayRemake/1" />
+    <param name="tabs" value="no" />
+    <param name="toolbar" value="yes" />
+    <param name="static_image" value="https://public.tableau.com/static/images/Ai/WhoSpendstheMostTimeonSocialMediamakeovermondayRemake/1/1.png" />
+    <param name="animate_transition" value="yes" />
+    <param name="display_static_image" value="yes" />
+    <param name="display_spinner" value="yes" />
+    <param name="display_overlay" value="yes" />
+    <param name="display_count" value="yes" />
+    <param name="language" value="ko-KR" />
   </object>
 </div>
-<script type='text/javascript'>
-  var divElement = document.getElementById('vizResponsive');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width = '100%';
-  vizElement.style.height = '100%';
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function () {
+    var divElement = document.getElementById('vizResponsive');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (vizElement) {
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    }
+  });
 </script>
+
+
 
 이번 대시보드는 Makeover Monday 11월 1주차 주제인 "Individuals using the Internet (% of population)" 데이터를 기반으로 제작하였다.
 과거에도 동일한 주제로 2024년에 대시보드를 만든 경험이 있지만, 최근 변화한 나의 분석 성향과 향상된 시각화 역량을 반영하여 새롭게 리메이크하였다.

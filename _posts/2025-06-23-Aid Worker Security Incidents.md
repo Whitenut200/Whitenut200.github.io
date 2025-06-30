@@ -3,6 +3,9 @@ title: "[Makeover Monday] Aid Worker Security Incidents Dashboard"
 excerpt: "Makeover Monday 데이터를 통해 Aid Worker Security Incidents 대시보드 만들기①"
 date: 2025-06-23T17:00:00+09:00
 last_modified_at: 2025-06-23T17:00:00+09:00
+toc: true
+toc_label: "목차"
+toc_sticky: true
 categories:
   - Makeovermonday
 tags:
@@ -11,37 +14,43 @@ tags:
 layout: single
 
 ---
-<div class='tableauPlaceholder' id='vizResponsive' style='position: relative; width: 100%; height: 0; padding-bottom: 62.5%;'>
+<div class="tableauPlaceholder" id="vizResponsive"
+     style="position: relative; width: 100%; padding-bottom: 62.5%; height: 0;">
   <noscript>
-    <a href='#'>
-      <img alt='대시보드 1' src='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1_rss.png' style='border: none' />
+    <a href="#">
+      <img alt="대시보드 1"
+           src="https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1_rss.png"
+           style="border: none" />
     </a>
   </noscript>
-  <object class='tableauViz' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='site_root' value='' />
-    <param name='name' value='AidWorkerSecurityIncidentsmakeovermonday/1' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='ko-KR' />
+  <object class="tableauViz"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+    <param name="embed_code_version" value="3" />
+    <param name="site_root" value="" />
+    <param name="name" value="AidWorkerSecurityIncidentsmakeovermonday/1" />
+    <param name="tabs" value="no" />
+    <param name="toolbar" value="yes" />
+    <param name="static_image" value="https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1_rss.png" />
+    <param name="animate_transition" value="yes" />
+    <param name="display_static_image" value="yes" />
+    <param name="display_spinner" value="yes" />
+    <param name="display_overlay" value="yes" />
+    <param name="display_count" value="yes" />
+    <param name="language" value="ko-KR" />
   </object>
 </div>
-<script type='text/javascript'>
-  var divElement = document.getElementById('vizResponsive');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width = '100%';
-  vizElement.style.height = '100%';
 
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function () {
+    var divElement = document.getElementById('vizResponsive');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (vizElement) {
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    }
+  });
 </script>
 
 Makeovermonday에 올라온 11월 3주차 주제인 Aid Worker Security Incidents 에 관한 대시보드를 구축하였다. 데이터셋은 Makeovermonday 사이트에 올라온 데이터를 사용하였으며 기사(Aid Worker Security Incidents report)를 통해 배경 지식을 습득한 후 대시보드를 구축하였다.
@@ -76,34 +85,34 @@ Makeovermonday에 올라온 11월 3주차 주제인 Aid Worker Security Incident
 대시보드의 전반적인 분위기는 희생의 무게감을 전달하기 위해 어두운 배경을 사용한다. 빨간색과 흰색을 강조색으로 사용하여 데이터를 돋보이게 하였다.
 
 ## 3. 대시보드 구현
-#### - 지도
+#### 1. 지도
   - 원의 크기를 Total affect 값의 크기로 설정하여 피해인원을 보이고자 했으며, 지도는 어둡게 원의 색은 빨간색으로 설정하여 무거운 이미지를 보이도록 구상했다.
   - ountry 이름은 원이 밑에 레이블 표시가 되도록 설정하였고, 해당 지도는 대시보드의 배경처럼 깔리게 설정하였다.
 
-#### - 메인차트
+#### 2. 메인차트
   - 가장 많은 Total affect값을 가진 순서대로 순위를 매겨 1-3위 국가들의 구체적인 정보를 보여주고자 하였다.
   - 일단 1위에 해당하는 부분을 만들고 복제하여 2위 3위가 나오도록 rank 의 수를 조정하였다.
 
-#### - 국가 이름과 순위
+#### 3. 국가 이름과 순위
   - 국가 이름을 제일 왼쪽에 두어 잘 보이도록 설계하였고, 그 옆에 순위를 보여주어 강조하였다.
   - 'year>' 해당 레이블 뒤에는 연도 필터에 따라 달라지며, 만약 필터에 **전체** or **두 개이상의 연도**가 클릭 되었을 때는 'Two or more years' 라고 뜨고, **한 개의 연도**만 클릭 되어있을 때는 해당 연도가 뜨도록 설정하였다.
 
-#### - KPI
+#### 4. KPI
   - Killed, Wounded, Kidnapped 의 값이 보이도록 설정하였다.
   - 3개의 지표를 합쳐서 Total affect 값을 만들었으며, 3개 지표 각각 의미가 크다고 판단하여 kPI로 강조하였다.
   
-#### - 성별
+#### 5. 성별
   - 성별의 따른 피해인원 수를 보여주기 위해 만들었다.
 
-#### - 자원봉사자 유형
+#### 6. 자원봉사자 유형
   - 피해자들의 유형을 보여주는 것으로 대체로 위에 있는 원이 national, 아래 있는 원이 internationals이며 두 개의 위치는 피해인원 수에 따라 바뀐다
   - national과 internationals의 수를 보여주며, 두 유형의 비율 차이도 따로 레이블로 표시하였다.
   
-#### - 상위 4-15위 국가
+#### 7. 상위 4-15위 국가
   - 상위 4-15위 국가들의 연도별 피해인원수를 보여주며, 연도는 2016~2024년까지 보이도록 설정하였다.
   - 참고로 2024년은 8월까지의 데이터까지 반영되었다.
 
-#### - 필터 & 동작
+#### 8. 필터 & 동작
   - 1,2,3위의 시트에 마우스오보하면 지도에 해당 국가가 하이라이트 되도록 설정하였다.
   - info시트를 이용하여 전체적인 대시보드이 설명을 담아놓았다.
 
