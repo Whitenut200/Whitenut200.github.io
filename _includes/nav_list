@@ -18,8 +18,8 @@
       </ul>
       <ul>
         {% for category in site.categories %}
-                    {% if category[0] == "강아지펜션" %}
-                        <li><a href="/categories/강아지펜션" class="">강아지펜션 ({{category[1].size}})</a></li>
+                    {% if category[0] == "개인프로젝트" %}
+                        <li><a href="/categories/개인프로젝트" class="">개인프로젝트 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
       </ul>    
