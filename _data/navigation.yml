@@ -15,6 +15,10 @@ docs:
         url: /categories/Makeovermonday
       - title: "강아지펜션"
         url: /categories/강아지펜션
+      - title: "Data+"
+        url: /categories/Data
+      - title: "SuperStore"
+        url: /categories/SuperStore                
   - title: 공부기록
     children:
       - title: "기타"
