@@ -15,12 +15,12 @@ layout: single
 
 ---
 <div class="tableauPlaceholder" id="vizResponsive"
-     style="position: relative; width: 100%; padding-bottom: 62.5%; height: 0;">
+     style="position: relative; width: 100%; height: 900px; max-width: 1100px; margin: 20px auto;">
   <noscript>
     <a href="#">
       <img alt="대시보드 1"
            src="https://public.tableau.com/static/images/Ai/AidWorkerSecurityIncidentsmakeovermonday/1/1_rss.png"
-           style="border: none" />
+           style="border: none; width: 100%; height: 100%; object-fit: contain;" />
     </a>
   </noscript>
   <object class="tableauViz"
