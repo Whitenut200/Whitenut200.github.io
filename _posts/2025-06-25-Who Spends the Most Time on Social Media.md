@@ -14,38 +14,27 @@ tags:
 layout: single
 
 ---
-
-<script type="text/javascript">
-  window.addEventListener('DOMContentLoaded', function () {
-    var divElement = document.getElementById('vizResponsive');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-    if (vizElement) {
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    }
-  });
-</script>
-
-
 <!-- 업데이트된 Minimal Mistakes 테마 breakpoint 맞춤 반응형 CSS -->
+<!-- 수정된 코드: 큰 화면은 원래대로, 노트북만 가로휠 방지 -->
 <style>
-/* 큰 화면 (800px 이상) - 데스크톱/큰 모니터 */
+/* 큰 화면 (800px 이상) - 데스크톱/큰 모니터 (원래대로) */
 @media (min-width: 800px) {
   #vizResponsive { 
     height: 1000px !important; 
-    width: 100% !important;
-    max-width: none !important;
   }
 }
 
-/* 중간 화면 (720px ~ 799px) - 노트북 */
+/* 중간 화면 (720px ~ 799px) - 노트북 (가로휠 방지) */
 @media (min-width: 720px) and (max-width: 799px) {
   #vizResponsive { 
     height: 700px !important; 
     width: 100% !important;
     max-width: 100% !important;
     overflow-x: hidden !important;
+  }
+  #vizResponsive .tableauViz {
+    transform: scale(0.95) !important;
+    transform-origin: top left !important;
   }
 }
 
@@ -57,6 +46,10 @@ layout: single
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
+  #vizResponsive .tableauViz {
+    transform: scale(0.9) !important;
+    transform-origin: top left !important;
+  }
 }
 
 /* 모바일 (600px 미만) - 스마트폰 */
@@ -67,12 +60,8 @@ layout: single
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
-}
-
-/* 노트북 가로 스크롤 방지 추가 설정 */
-@media (max-width: 799px) {
   #vizResponsive .tableauViz {
-    transform: scale(0.95) !important;
+    transform: scale(0.85) !important;
     transform-origin: top left !important;
   }
 }
