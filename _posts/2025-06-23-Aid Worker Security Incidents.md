@@ -14,8 +14,32 @@ tags:
 layout: single
 
 ---
+<!-- Minimal Mistakes 테마 breakpoint 맞춤 반응형 CSS -->
+<style>
+/* 큰 화면 (900px 이상) - 데스크톱/큰 모니터 */
+@media (min-width: 900px) {
+  #vizResponsive { height: 1100px !important; }
+}
+
+/* 중간 화면 (768px ~ 899px) - 노트북 */
+@media (min-width: 768px) and (max-width: 899px) {
+  #vizResponsive { height: 800px !important; }
+}
+
+/* 작은 화면 (600px ~ 767px) - 태블릿 */
+@media (min-width: 600px) and (max-width: 767px) {
+  #vizResponsive { height: 600px !important; }
+}
+
+/* 모바일 (600px 미만) - 스마트폰 */
+@media (max-width: 599px) {
+  #vizResponsive { height: 400px !important; }
+}
+</style>
+
+<!-- Tableau 대시보드 임베드 -->
 <div class="tableauPlaceholder" id="vizResponsive"
-     style="position: relative; width: 100%; height: 900px; max-width: 1100px; margin: 20px auto;">
+     style="position: relative; width: 100%; height: 800px; margin: 1em 0;">
   <noscript>
     <a href="#">
       <img alt="대시보드 1"
