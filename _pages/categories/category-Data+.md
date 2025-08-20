@@ -1,7 +1,7 @@
 ---
 title: "Data+"
 layout: archive
-permalink: categories/Data+
+permalink: Project/Data+
 author_profile: true
 sidebar_main: true
 types: posts

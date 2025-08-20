@@ -1,7 +1,7 @@
 ---
 title: "기타"
 layout: archive
-permalink: categories/기타
+permalink: /기타/
 author_profile: true
 sidebar_main: true
 types: posts

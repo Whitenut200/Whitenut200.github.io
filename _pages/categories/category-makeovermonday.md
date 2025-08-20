@@ -1,7 +1,7 @@
 ---
 title: "Makeovermonday"
 layout: archive
-permalink: categories/Makeovermonday
+permalink: Project/Makeovermonday
 author_profile: true
 sidebar_main: true
 types: posts

@@ -6,8 +6,7 @@ last_modified_at: 2025-06-23T17:00:00+09:00
 toc: true
 toc_label: "목차"
 toc_sticky: true
-categories:
-  - Makeovermonday
+categories: [Project,Makeovermonday]
 tags:
   - Tableau
   - Makeovermonday

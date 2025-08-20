@@ -8,36 +8,36 @@
       📖 전체 글 수 {{sum}} 개
     </li>
     <li>
-      <span class="nav__sub-title">Dashboard</span>
+      <span class="nav__sub-title">Project</span>
       <ul>
         {% for category in site.categories %}
-                    {% if category[0] == "Makeovermonday" %}
-                        <li><a href="/categories/Makeovermonday" class="">Makeovermonday ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-      </ul>
-      <ul>
-        {% for category in site.categories %}
-                    {% if category[0] == "개인프로젝트" %}
-                        <li><a href="/categories/개인프로젝트" class="">개인프로젝트 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-      </ul>    
-      <ul>
-        {% for category in site.categories %}
-                    {% if category[0] == "Data+" %}
-                        <li><a href="/categories/Data+" class="">Data+ ({{category[1].size}})</a></li>
+                    {% if category[0] == "Subway" %}
+                        <li><a href="/Project/Subway" class="">개인프로젝트 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
       </ul> 
       <ul>
         {% for category in site.categories %}
-                    {% if category[0] == "SuperStore" %}
-                        <li><a href="/categories/SuperStore" class="">SuperStore ({{category[1].size}})</a></li>
+                    {% if category[0] == "Makeovermonday" %}
+                        <li><a href="/Project/Makeovermonday" class="">Makeovermonday ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+      </ul>   
+      <ul>
+        {% for category in site.categories %}
+                    {% if category[0] == "Data+" %}
+                        <li><a href="/Project/Data+" class="">Data+ ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+      </ul> 
+      <ul>
+        {% for category in site.categories %}
+                    {% if category[0] == "Another Dashboard" %}
+                        <li><a href="/Project/Another Dashboard" class="">SuperStore ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
       </ul>                 
-      <span class="nav__sub-title">공부기록</span>
+      <span class="nav__sub-title">기타</span>
       <ul>
         {% for category in site.categories %}
                     {% if category[0] == "기타" %}
