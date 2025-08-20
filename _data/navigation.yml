@@ -12,15 +12,13 @@ docs:
   - title: "Project"
     url: /Project/
     children:
-      - title: "Makeovermonday"
-        url: /Project/Makeovermonday
       - title: "Subway"
         url: /Project/Subway
-      - title: "강아지펜션"
-        url: /Project/강아지펜션
+      - title: "Makeovermonday"
+        url: /Project/Makeovermonday
       - title: "Data+"
         url: /Project/Data
-      - title: "SuperStore"
-        url: /Project/SuperStore                
+      - title: "Another Dashboard"
+        url: /Project/Another Dashboard                
   - title: 기타
     url: /기타/

@@ -12,7 +12,7 @@
       <ul>
         {% for category in site.categories %}
                     {% if category[0] == "Subway" %}
-                        <li><a href="/Project/Subway" class="">개인프로젝트 ({{category[1].size}})</a></li>
+                        <li><a href="/Project/Subway" class="">Subway ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
       </ul> 
@@ -33,7 +33,7 @@
       <ul>
         {% for category in site.categories %}
                     {% if category[0] == "Another Dashboard" %}
-                        <li><a href="/Project/Another Dashboard" class="">SuperStore ({{category[1].size}})</a></li>
+                        <li><a href="/Project/Another Dashboard" class="">Another Dashboard ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
       </ul>                 
