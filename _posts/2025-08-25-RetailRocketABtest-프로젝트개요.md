@@ -7,7 +7,7 @@ toc: true
 toc_label: "목차"
 toc_sticky: true
 categories: [Prodject,Retail Rocket]
-tags: [ecommerce,PostgreSQL, pyton, ABtest, CTV, Funnel 분석, Path 분석]
+tags: [ecommerce,PostgreSQL, python, ABtest, CTV, Funnel 분석, Path 분석]
 layout: single
 
 ---
