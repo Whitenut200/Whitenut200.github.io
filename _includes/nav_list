@@ -15,7 +15,14 @@
                         <li><a href="/Project/Subway" class="">Subway ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-      </ul> 
+      </ul>       
+      <ul>
+        {% for category in site.categories %}
+                    {% if category[0] == "Retail Rocket" %}
+                        <li><a href="/Project/Retail Rocket" class="">Retail Rocket ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+      </ul>             
       <ul>
         {% for category in site.categories %}
                     {% if category[0] == "Makeovermonday" %}
