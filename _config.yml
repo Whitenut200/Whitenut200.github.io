@@ -118,7 +118,7 @@ author:
   avatar           : "/assets/images/nut.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              :  
   location         : "Seoul/Korea"
-  email            :
+  email            : "dtbldus34@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -146,9 +146,9 @@ footer:
       icon:
       # icon: "fab fa-fw fa-tableau Public"
       url: "https://public.tableau.com/app/profile/yu.siyeon/vizzes"
-    # - label: "GitHub"
-    #   icon: "fab fa-fw fa-github"
-      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Whitenut200"
     # - label: "GitLab"
     #   icon: "fab fa-fw fa-gitlab"
     #   # url:
