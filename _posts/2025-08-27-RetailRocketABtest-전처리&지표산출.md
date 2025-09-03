@@ -58,11 +58,13 @@ $$
 #### 2-1. 경로 지표 (Path Composition, N일 이내)
 
 - **View → Cart → Purchase (via_cart)**  
+
   $$
   \frac{count(View \rightarrow Cart \rightarrow Purchase)}{total(Purchase)}
   $$
 
 - **View → Purchase (Direct, no cart)**  
+
   $$
   \frac{count(View \rightarrow Purchase\ (no\ Cart))}{total(Purchase)}
   $$
@@ -70,11 +72,13 @@ $$
 #### 2-2. 퍼널 지표 (Funnel Rates, N일 이내)
 
 - **View → Cart**  
+
   $$
   \frac{count(View \rightarrow Cart)}{total(View)}
   $$
 
 - **Cart → Purchase**  
+
   $$
   \frac{count(Cart \rightarrow Purchase\ (within\ 7d))}{total(Cart)}
   $$
