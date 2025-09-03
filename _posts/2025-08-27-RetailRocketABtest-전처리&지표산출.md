@@ -16,6 +16,9 @@ layout: single
 </script>
 
 ## 1. 데이터 전처리
+[![preprocessing.py](https://img.shields.io/badge/code-preprocessing.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/preprocessing.py)
+[![AB-add.py](https://img.shields.io/badge/code-AB--add.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/AB-add.py)
+
 ### 원본데이터 구성
 - **events**
   - 고객행동에 대한 모든 로그데이터
@@ -25,22 +28,24 @@ layout: single
   - part1, part2로 나누어져있으며, category나 item 관련 변경사항 로그데이터
 
 ### 전처리 내용
-[![preprocessing.py](https://img.shields.io/badge/code-preprocessing.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/preprocessing.py)
-[![AB-add.py](https://img.shields.io/badge/code-AB--add.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/AB-add.py)
 
 1. 날짜 형식 변경
   - timestamp 형식에서 date형식으로 변경
+
 2. item_properties_part1, item_properties_part2 유니온
   - 같은 내용을 담고 있으므로 서로 유니온처치
+
 3. category_tree와 item_properties 병합
   - item_properties에서 catagoryid에 대한 내용만 가져오기
   - 두 데이터 조인
+
 4. category_item과 events 병합
   - itemid가 서로 같으면 category_item에 존재하는 categoryid 가져오기
   - 근데, 로그데이터여서 서로 date가 존재해서
     - events.itemid의 날짜가 category_item의 날짜보다 더 최신일 경우에 해당 categoryid 가져오기
     - 반대의 경우 nan로 처리하거나 그 전의 값이 존재하다면 그거 가져오기(가장 가까운 과거값)
   - 두 데이터 join
+
 5. A,B할당
   - userid만 추출하여 무작위로 A,B 할당하여 원래 데이터와 조인 (5:5)
 
@@ -87,7 +92,7 @@ $$
 
 ### 계산 기준
 
-본 A/B 테스트에서는 전환 계산을 엄격하게 정의
+본 A/B 테스트에서는 전환 계산을 엄격하게 정의함
 
 1. **동일 사용자**: user_id가 일치해야 함  
 2. **동일 아이템 & 카테고리**: item_id, category_id가 View/Cart/Purchase 간 일치  
@@ -103,4 +108,4 @@ $$
 - 위와 같은 엄격 조건으로 인해 **전환율 수치가 실제보다 낮게 측정**
 - 그러나 이는 **A/B 테스트의 내적 타당성**(같은 아이템·카테고리 내 비교)을 높이기 위해 
 - 실무에서는 종종 **느슨한 조건**(예: 카테고리만 일치, 세션 범위, 라스트 터치 등)을 사용하지만,  
-  본 프로젝트는 **실험 정확성 확보**를 위해 엄격 기준을 채택 
+  본 프로젝트는 **실험 정확성 확보**를 위해 엄격 기준을 채택함
