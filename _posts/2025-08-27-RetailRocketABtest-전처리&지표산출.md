@@ -11,6 +11,10 @@ tags: [ecommerce,PostgreSQL, python, ABtest, CTV, Funnel 분석, Path 분석]
 layout: single
 
 ---
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 ## 1. 데이터 전처리
 ### 원본데이터 구성
 - **events**
