@@ -25,6 +25,9 @@ layout: single
   - part1, part2로 나누어져있으며, category나 item 관련 변경사항 로그데이터
 
 ### 전처리 내용
+[![preprocessing.py](https://img.shields.io/badge/code-preprocessing.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/preprocessing.py)
+[![AB-add.py](https://img.shields.io/badge/code-AB--add.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/AB-add.py)
+
 1. 날짜 형식 변경
   - timestamp 형식에서 date형식으로 변경
 2. item_properties_part1, item_properties_part2 유니온
@@ -38,11 +41,8 @@ layout: single
     - events.itemid의 날짜가 category_item의 날짜보다 더 최신일 경우에 해당 categoryid 가져오기
     - 반대의 경우 nan로 처리하거나 그 전의 값이 존재하다면 그거 가져오기(가장 가까운 과거값)
   - 두 데이터 join
-5. AB할당
+5. A,B할당
   - userid만 추출하여 무작위로 A,B 할당하여 원래 데이터와 조인 (5:5)
-
-[![preprocessing.py](https://img.shields.io/badge/code-preprocessing.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/preprocessing.py)
-[![AB-add.py](https://img.shields.io/badge/code-AB--add.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/AB-add.py)
 
 ## 2. 지표 산출
 [![Metric-calculation.sql](https://img.shields.io/badge/code-Metric--calculation.sql-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/Metric-calculation.sql)
