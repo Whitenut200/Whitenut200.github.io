@@ -38,10 +38,10 @@ layout: single
   - userid만 추출하여 무작위로 A,B 할당하여 원래 데이터와 조인 (5:5)
 
 [![preprocessing.py](https://img.shields.io/badge/code-preprocessing.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/preprocessing.py)
-[![AB-add.py](https://img.shields.io/badge/code-AB-add.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/AB-add.py)
+[![AB-add.py](https://img.shields.io/badge/code-AB--add.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/AB-add.py)
 
 ## 2. 지표 산출
-[![Metric-calculation.sql](https://img.shields.io/badge/code-Metric calculation.sql-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/Metric calculation.sql)
+[![Metric-calculation.sql](https://img.shields.io/badge/code-Metric--calculation.sql-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/Metric-calculation.sql)
 
 ### 1. 주지표 — N일 이내 구매전환율, N=1,7,14,30
 $$
