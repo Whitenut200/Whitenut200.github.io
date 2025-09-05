@@ -15,222 +15,296 @@ layout: single
 # 1. 가설검정 실시
 [![Hypothesis-Testing.py](https://img.shields.io/badge/code-Hypothesis-Testing.py-blue?logo=github)](https://github.com/Hypothesis-Testing.py/Retail-Rocket-ecommerce-ABtest/blob/main/code/Hypothesis-Testing.py)
 
-## N일 이내의 구매전환율 (CTV)
-- 주지표에 해당함
+<!-- ============================== -->
+<!-- N일 이내의 구매전환율 (CTV)   -->
+<!-- ============================== -->
+<h2>N일 이내의 구매전환율 (CTV)</h2>
+<p>- 주지표에 해당함</p>
+
+<table>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 1일</b>
+      <table>
+        <tr><th>Group</th><th>Conversions</th><th>Non-Conversions</th><th>CVR</th></tr>
+        <tr><td><b>A</b></td><td>6,568</td><td>797,980</td><td>0.0082</td></tr>
+        <tr><td><b>B</b></td><td>7,613</td><td>801,504</td><td>0.0094</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 7일</b>
+      <table>
+        <tr><th>Group</th><th>Conversions</th><th>Non-Conversions</th><th>CVR</th></tr>
+        <tr><td><b>A</b></td><td>6,927</td><td>797,621</td><td>0.0086</td></tr>
+        <tr><td><b>B</b></td><td>7,965</td><td>801,152</td><td>0.0098</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 14일</b>
+      <table>
+        <tr><th>Group</th><th>Conversions</th><th>Non-Conversions</th><th>CVR</th></tr>
+        <tr><td><b>A</b></td><td>7,027</td><td>797,521</td><td>0.0087</td></tr>
+        <tr><td><b>B</b></td><td>8,092</td><td>801,025</td><td>0.0100</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 30일</b>
+      <table>
+        <tr><th>Group</th><th>Conversions</th><th>Non-Conversions</th><th>CVR</th></tr>
+        <tr><td><b>A</b></td><td>7,096</td><td>797,452</td><td>0.0088</td></tr>
+        <tr><td><b>B</b></td><td>8,183</td><td>800,934</td><td>0.0101</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+  </tr>
+</table>
+
+<hr/>
+
+<!-- ============================== -->
+<!-- Funnel: View → Cart           -->
+<!-- ============================== -->
+<h2>Funnel 분석 — View → Cart</h2>
+<p>- 보조지표에 해당됨</p>
+
+<table>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 1일</b>
+      <table>
+        <tr><th>Group</th><th>View→Cart</th><th>No Cart</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>18,027</td><td>786,521</td><td>0.0224</td></tr>
+        <tr><td><b>B</b></td><td>19,363</td><td>789,754</td><td>0.0239</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 7일</b>
+      <table>
+        <tr><th>Group</th><th>View→Cart</th><th>No Cart</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>19,000</td><td>785,548</td><td>0.0236</td></tr>
+        <tr><td><b>B</b></td><td>20,380</td><td>788,737</td><td>0.0252</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 14일</b>
+      <table>
+        <tr><th>Group</th><th>View→Cart</th><th>No Cart</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>19,189</td><td>785,359</td><td>0.0239</td></tr>
+        <tr><td><b>B</b></td><td>20,563</td><td>788,554</td><td>0.0254</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 30일</b>
+      <table>
+        <tr><th>Group</th><th>View→Cart</th><th>No Cart</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>19,306</td><td>785,242</td><td>0.0240</td></tr>
+        <tr><td><b>B</b></td><td>20,715</td><td>788,402</td><td>0.0256</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+  </tr>
+</table>
+
+<hr/>
+
+<!-- ============================== -->
+<!-- Funnel: Cart → Purchase       -->
+<!-- ============================== -->
+<h2>Funnel 분석 — Cart → Purchase</h2>
+
+<table>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 1일</b>
+      <table>
+        <tr><th>Group</th><th>Purchase</th><th>No Purchase</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>5,558</td><td>12,469</td><td>0.3083</td></tr>
+        <tr><td><b>B</b></td><td>6,545</td><td>12,818</td><td>0.3380</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 7일</b>
+      <table>
+        <tr><th>Group</th><th>Purchase</th><th>No Purchase</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>6,250</td><td>12,750</td><td>0.3289</td></tr>
+        <tr><td><b>B</b></td><td>7,250</td><td>13,130</td><td>0.3557</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 14일</b>
+      <table>
+        <tr><th>Group</th><th>Purchase</th><th>No Purchase</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>6,357</td><td>12,832</td><td>0.3313</td></tr>
+        <tr><td><b>B</b></td><td>7,382</td><td>13,181</td><td>0.3590</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 30일</b>
+      <table>
+        <tr><th>Group</th><th>Purchase</th><th>No Purchase</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>6,429</td><td>12,877</td><td>0.3330</td></tr>
+        <tr><td><b>B</b></td><td>7,472</td><td>13,243</td><td>0.3607</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0000)</p>
+
+    </td>
+  </tr>
+</table>
+
+<hr/>
+
+<!-- ============================== -->
+<!-- Path: View → Purchase (Direct)-->
+<!-- ============================== -->
+<h2>Path 분석 — View → Purchase (Direct)</h2>
+
+<table>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 1일</b>
+      <table>
+        <tr><th>Group</th><th>Direct Purchase</th><th>No Direct</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>597</td><td>5,558</td><td>0.0970</td></tr>
+        <tr><td><b>B</b></td><td>616</td><td>6,545</td><td>0.0860</td></tr>
+      </table>
+      <p><b>Result:</b> A &gt; B (p=0.0282)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 7일</b>
+      <table>
+        <tr><th>Group</th><th>Direct Purchase</th><th>No Direct</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>645</td><td>6,282</td><td>0.0935</td></tr>
+        <tr><td><b>B</b></td><td>681</td><td>7,254</td><td>0.0858</td></tr>
+      </table>
+      <p><b>Result:</b> A &gt; B (p=0.1030, not significant)</p>
+
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 14일</b>
+      <table>
+        <tr><th>Group</th><th>Direct Purchase</th><th>No Direct</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>654</td><td>6,363</td><td>0.0932</td></tr>
+        <tr><td><b>B</b></td><td>698</td><td>7,388</td><td>0.0863</td></tr>
+      </table>
+      <p><b>Result:</b> A &gt; B (p=0.1396, not significant)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 30일</b>
+      <table>
+        <tr><th>Group</th><th>Direct Purchase</th><th>No Direct</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>660</td><td>6,435</td><td>0.0930</td></tr>
+        <tr><td><b>B</b></td><td>703</td><td>7,479</td><td>0.0859</td></tr>
+      </table>
+      <p><b>Result:</b> A &gt; B (p=0.1245, not significant)</p>
+
+    </td>
+  </tr>
+</table>
+
+<hr/>
+
+<!-- ============================== -->
+<!-- Path: View → Cart → Purchase  -->
+<!-- ============================== -->
+<h2>Path 분석 — View → Cart → Purchase (Via cart)</h2>
+
+<table>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 1일</b>
+      <table>
+        <tr><th>Group</th><th>Cart Path</th><th>Non-Cart Path</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>5,558</td><td>597</td><td>0.9030</td></tr>
+        <tr><td><b>B</b></td><td>6,545</td><td>616</td><td>0.9140</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.0282)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 7일</b>
+      <table>
+        <tr><th>Group</th><th>Cart Path</th><th>Non-Cart Path</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>6,255</td><td>645</td><td>0.9065</td></tr>
+        <tr><td><b>B</b></td><td>7,254</td><td>681</td><td>0.9142</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.1030, not significant)</p>
+
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 14일</b>
+      <table>
+        <tr><th>Group</th><th>Cart Path</th><th>Non-Cart Path</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>6,363</td><td>654</td><td>0.9068</td></tr>
+        <tr><td><b>B</b></td><td>7,388</td><td>698</td><td>0.9137</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.1396, not significant)</p>
+
+    </td>
+    <td style="padding:10px; vertical-align:top;">
+
+      <b>📅 30일</b>
+      <table>
+        <tr><th>Group</th><th>Cart Path</th><th>Non-Cart Path</th><th>Rate</th></tr>
+        <tr><td><b>A</b></td><td>6,435</td><td>660</td><td>0.9070</td></tr>
+        <tr><td><b>B</b></td><td>7,479</td><td>703</td><td>0.9141</td></tr>
+      </table>
+      <p><b>Result:</b> B &gt; A (p=0.1245, not significant)</p>
+
+    </td>
+  </tr>
+</table>
 
-### 1일
-| Group | Conversions | Non-Conversions | CVR     |
-|-------|-------------|-----------------|---------|
-| **A** | 6,568       | 797,980         | 0.0082  |
-| **B** | 7,613       | 801,504         | 0.0094  |
-
-**Result:** B > A (p=0.0000)
-
----
-- 7일
-
-| Group | Conversions | Non-Conversions | CVR     |
-|-------|-------------|-----------------|---------|
-| **A** | 6,927       | 797,621         | 0.0086  |
-| **B** | 7,965       | 801,152         | 0.0098  |
-
-**Result:** B > A (p=0.0000)
-
----
-- 14일
-
-| Group | Conversions | Non-Conversions | CVR     |
-|-------|-------------|-----------------|---------|
-| **A** | 7,027       | 797,521         | 0.0087  |
-| **B** | 8,092       | 801,025         | 0.0100  |
-
-**Result:** B > A (p=0.0000)
-
----
-- 30일
-
-| Group | Conversions | Non-Conversions | CVR     |
-|-------|-------------|-----------------|---------|
-| **A** | 7,096       | 797,452         | 0.0088  |
-| **B** | 8,183       | 800,934         | 0.0101  |
-
-**Result:** B > A (p=0.0000)
-
-## Funnel 분석
-### View→Cart
-- 보조지표에 해당됨
-
--1일
-
-| Group | View→Cart | No Cart   | Rate   |
-|-------|-----------|-----------|--------|
-| **A** | 18,027    | 786,521   | 0.0224 |
-| **B** | 19,363    | 789,754   | 0.0239 |
-
-**Result:** B > A (p=0.0000)
-
----
-
-- 7일
-
-| Group | View→Cart | No Cart   | Rate   |
-|-------|-----------|-----------|--------|
-| **A** | 19,000    | 785,548   | 0.0236 |
-| **B** | 20,380    | 788,737   | 0.0252 |
-
-**Result:** B > A (p=0.0000)
-
----
-
-- 14일
-
-| Group | View→Cart | No Cart   | Rate   |
-|-------|-----------|-----------|--------|
-| **A** | 19,189    | 785,359   | 0.0239 |
-| **B** | 20,563    | 788,554   | 0.0254 |
-
-**Result:** B > A (p=0.0000)
-
----
-
-- 30일
-
-| Group | View→Cart | No Cart   | Rate   |
-|-------|-----------|-----------|--------|
-| **A** | 19,306    | 785,242   | 0.0240 |
-| **B** | 20,715    | 788,402   | 0.0256 |
-
-**Result:** B > A (p=0.0000)
-
-### Cart→Purchase
-- 1일
-
-| Group | Purchase | No Purchase | Rate   |
-|-------|----------|-------------|--------|
-| **A** | 5,558    | 12,469      | 0.3083 |
-| **B** | 6,545    | 12,818      | 0.3380 |
-
-**Result:** B > A (p=0.0000)
-
----
-
-- 7일
-
-| Group | Purchase | No Purchase | Rate   |
-|-------|----------|-------------|--------|
-| **A** | 6,250    | 12,750      | 0.3289 |
-| **B** | 7,250    | 13,130      | 0.3557 |
-
-**Result:** B > A (p=0.0000)
-
----
-
-- 14일
-
-| Group | Purchase | No Purchase | Rate   |
-|-------|----------|-------------|--------|
-| **A** | 6,357    | 12,832      | 0.3313 |
-| **B** | 7,382    | 13,181      | 0.3590 |
-
-**Result:** B > A (p=0.0000)
-
----
-
-- 30일
-
-| Group | Purchase | No Purchase | Rate   |
-|-------|----------|-------------|--------|
-| **A** | 6,429    | 12,877      | 0.3330 |
-| **B** | 7,472    | 13,243      | 0.3607 |
-
-**Result:** B > A (p=0.0000)
-
-## Path 분석
-### View→Purchase (Direct)
-- 1일
-
-| Group | Direct Purchase | No Direct | Rate   |
-|-------|-----------------|-----------|--------|
-| **A** | 597             | 5,558     | 0.0970 |
-| **B** | 616             | 6,545     | 0.0860 |
-
-**Result:** A > B (p=0.0282)
-
----
-
-- 7일
-
-| Group | Direct Purchase | No Direct | Rate   |
-|-------|-----------------|-----------|--------|
-| **A** | 645             | 6,282     | 0.0935 |
-| **B** | 681             | 7,254     | 0.0858 |
-
-**Result:** A > B (p=0.1030, not significant)
-
----
-
-- 14일
-
-| Group | Direct Purchase | No Direct | Rate   |
-|-------|-----------------|-----------|--------|
-| **A** | 654             | 6,363     | 0.0932 |
-| **B** | 698             | 7,388     | 0.0863 |
-
-**Result:** A > B (p=0.1396, not significant)
-
----
-
-- 30일
-
-| Group | Direct Purchase | No Direct | Rate   |
-|-------|-----------------|-----------|--------|
-| **A** | 660             | 6,435     | 0.0930 |
-| **B** | 703             | 7,479     | 0.0859 |
-
-**Result:** A > B (p=0.1245, not significant)
-
-### View→Cart→Purchase (Viacart)
-- 1일
-
-| Group | Cart Path | Non-Cart Path | Rate   |
-|-------|-----------|---------------|--------|
-| **A** | 5,558     | 597           | 0.9030 |
-| **B** | 6,545     | 616           | 0.9140 |
-
-**Result:** B > A (p=0.0282)
-
----
-
-- 7일
-
-| Group | Cart Path | Non-Cart Path | Rate   |
-|-------|-----------|---------------|--------|
-| **A** | 6,255     | 645           | 0.9065 |
-| **B** | 7,254     | 681           | 0.9142 |
-
-**Result:** B > A (p=0.1030, not significant)
-
----
-
-- 14일
-
-| Group | Cart Path | Non-Cart Path | Rate   |
-|-------|-----------|---------------|--------|
-| **A** | 6,363     | 654           | 0.9068 |
-| **B** | 7,388     | 698           | 0.9137 |
-
-**Result:** B > A (p=0.1396, not significant)
-
----
-
-- 30일
-
-| Group | Cart Path | Non-Cart Path | Rate   |
-|-------|-----------|---------------|--------|
-| **A** | 6,435     | 660           | 0.9070 |
-| **B** | 7,479     | 703           | 0.9141 |
-
-**Result:** B > A (p=0.1245, not significant)
 
 # 2. 데이터 생성
 - 해당 결과를 통합한 시각화용 데이터를 생성
@@ -252,3 +326,4 @@ layout: single
 | 14   | Cart경로        | 0.1396      | 1.4771    | -0.002249    | 0.016009     | 0.006880  |
 | 14   | Direct경로      | 0.1396      | -1.4771   | -0.016009    | 0.002249     | -0.006880 |
 | 14   | View→Cart      | 1.49E-10    | 6.4063    | 0.001085     | 0.002042     | 0.001563  |
+| ...   | ...      | ...    | ...    | ...     | ...     | ...  |
