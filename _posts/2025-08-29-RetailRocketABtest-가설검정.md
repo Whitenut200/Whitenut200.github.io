@@ -13,7 +13,7 @@ layout: single
 ---
 
 # 1. 가설검정 실시
-[![Hypothesis-Testing.py](https://img.shields.io/badge/code-Hypothesis--Testing.py-blue?logo=github)](https://github.com/Hypothesis-Testing.py/Retail-Rocket-ecommerce-ABtest/blob/main/code/Hypothesis-Testing.py)
+[![Hypothesis-Testing.py](https://img.shields.io/badge/code-Hypothesis--Testing.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/Hypothesis-Testing.py)
 
 <!-- ============================== -->
 <!-- N일 이내의 구매전환율 (CTV)   -->
