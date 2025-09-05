@@ -13,16 +13,17 @@ layout: single
 ---
 
 # 1. 가설검정 실시
-[![Hypothesis-Testing.py.py](https://img.shields.io/badge/code-Hypothesis-Testing.py.py-blue?logo=github)](https://github.com/Hypothesis-Testing.py/Retail-Rocket-ecommerce-ABtest/blob/main/code/Hypothesis-Testing.py.py)
+[![Hypothesis-Testing.py](https://img.shields.io/badge/code-Hypothesis-Testing.py-blue?logo=github)](https://github.com/Hypothesis-Testing.py/Retail-Rocket-ecommerce-ABtest/blob/main/code/Hypothesis-Testing.py)
 
 ## N일 이내의 구매전환율 (CTV)
 - 주지표에 해당함
-- 1일
 
+### 1일
 | Group | Conversions | Non-Conversions | CVR     |
 |-------|-------------|-----------------|---------|
 | **A** | 6,568       | 797,980         | 0.0082  |
 | **B** | 7,613       | 801,504         | 0.0094  |
+
 **Result:** B > A (p=0.0000)
 
 ---
@@ -32,6 +33,7 @@ layout: single
 |-------|-------------|-----------------|---------|
 | **A** | 6,927       | 797,621         | 0.0086  |
 | **B** | 7,965       | 801,152         | 0.0098  |
+
 **Result:** B > A (p=0.0000)
 
 ---
@@ -41,6 +43,7 @@ layout: single
 |-------|-------------|-----------------|---------|
 | **A** | 7,027       | 797,521         | 0.0087  |
 | **B** | 8,092       | 801,025         | 0.0100  |
+
 **Result:** B > A (p=0.0000)
 
 ---
@@ -50,44 +53,53 @@ layout: single
 |-------|-------------|-----------------|---------|
 | **A** | 7,096       | 797,452         | 0.0088  |
 | **B** | 8,183       | 800,934         | 0.0101  |
+
 **Result:** B > A (p=0.0000)
 
 ## Funnel 분석
 ### View→Cart
 - 보조지표에 해당됨
-- 1일
+
+-1일
 
 | Group | View→Cart | No Cart   | Rate   |
 |-------|-----------|-----------|--------|
 | **A** | 18,027    | 786,521   | 0.0224 |
 | **B** | 19,363    | 789,754   | 0.0239 |
+
 **Result:** B > A (p=0.0000)
 
 ---
+
 - 7일
 
 | Group | View→Cart | No Cart   | Rate   |
 |-------|-----------|-----------|--------|
 | **A** | 19,000    | 785,548   | 0.0236 |
 | **B** | 20,380    | 788,737   | 0.0252 |
+
 **Result:** B > A (p=0.0000)
 
 ---
+
 - 14일
 
 | Group | View→Cart | No Cart   | Rate   |
 |-------|-----------|-----------|--------|
 | **A** | 19,189    | 785,359   | 0.0239 |
 | **B** | 20,563    | 788,554   | 0.0254 |
+
 **Result:** B > A (p=0.0000)
 
 ---
+
 - 30일
 
 | Group | View→Cart | No Cart   | Rate   |
 |-------|-----------|-----------|--------|
 | **A** | 19,306    | 785,242   | 0.0240 |
 | **B** | 20,715    | 788,402   | 0.0256 |
+
 **Result:** B > A (p=0.0000)
 
 ### Cart→Purchase
@@ -97,95 +109,127 @@ layout: single
 |-------|----------|-------------|--------|
 | **A** | 5,558    | 12,469      | 0.3083 |
 | **B** | 6,545    | 12,818      | 0.3380 |
+
 **Result:** B > A (p=0.0000)
 
 ---
+
 - 7일
+
 | Group | Purchase | No Purchase | Rate   |
 |-------|----------|-------------|--------|
 | **A** | 6,250    | 12,750      | 0.3289 |
 | **B** | 7,250    | 13,130      | 0.3557 |
+
 **Result:** B > A (p=0.0000)
 
 ---
+
 - 14일
+
 | Group | Purchase | No Purchase | Rate   |
 |-------|----------|-------------|--------|
 | **A** | 6,357    | 12,832      | 0.3313 |
 | **B** | 7,382    | 13,181      | 0.3590 |
+
 **Result:** B > A (p=0.0000)
 
 ---
+
 - 30일
+
 | Group | Purchase | No Purchase | Rate   |
 |-------|----------|-------------|--------|
 | **A** | 6,429    | 12,877      | 0.3330 |
 | **B** | 7,472    | 13,243      | 0.3607 |
+
 **Result:** B > A (p=0.0000)
 
 ## Path 분석
 ### View→Purchase (Direct)
 - 1일
+
 | Group | Direct Purchase | No Direct | Rate   |
 |-------|-----------------|-----------|--------|
 | **A** | 597             | 5,558     | 0.0970 |
 | **B** | 616             | 6,545     | 0.0860 |
+
 **Result:** A > B (p=0.0282)
 
 ---
+
 - 7일
+
 | Group | Direct Purchase | No Direct | Rate   |
 |-------|-----------------|-----------|--------|
 | **A** | 645             | 6,282     | 0.0935 |
 | **B** | 681             | 7,254     | 0.0858 |
+
 **Result:** A > B (p=0.1030, not significant)
 
 ---
+
 - 14일
+
 | Group | Direct Purchase | No Direct | Rate   |
 |-------|-----------------|-----------|--------|
 | **A** | 654             | 6,363     | 0.0932 |
 | **B** | 698             | 7,388     | 0.0863 |
+
 **Result:** A > B (p=0.1396, not significant)
 
 ---
+
 - 30일
+
 | Group | Direct Purchase | No Direct | Rate   |
 |-------|-----------------|-----------|--------|
 | **A** | 660             | 6,435     | 0.0930 |
 | **B** | 703             | 7,479     | 0.0859 |
+
 **Result:** A > B (p=0.1245, not significant)
 
 ### View→Cart→Purchase (Viacart)
 - 1일
+
 | Group | Cart Path | Non-Cart Path | Rate   |
 |-------|-----------|---------------|--------|
 | **A** | 5,558     | 597           | 0.9030 |
 | **B** | 6,545     | 616           | 0.9140 |
+
 **Result:** B > A (p=0.0282)
 
 ---
+
 - 7일
+
 | Group | Cart Path | Non-Cart Path | Rate   |
 |-------|-----------|---------------|--------|
 | **A** | 6,255     | 645           | 0.9065 |
 | **B** | 7,254     | 681           | 0.9142 |
+
 **Result:** B > A (p=0.1030, not significant)
 
 ---
+
 - 14일
+
 | Group | Cart Path | Non-Cart Path | Rate   |
 |-------|-----------|---------------|--------|
 | **A** | 6,363     | 654           | 0.9068 |
 | **B** | 7,388     | 698           | 0.9137 |
+
 **Result:** B > A (p=0.1396, not significant)
 
 ---
+
 - 30일
+
 | Group | Cart Path | Non-Cart Path | Rate   |
 |-------|-----------|---------------|--------|
 | **A** | 6,435     | 660           | 0.9070 |
 | **B** | 7,479     | 703           | 0.9141 |
+
 **Result:** B > A (p=0.1245, not significant)
 
 # 2. 데이터 생성
@@ -208,4 +252,3 @@ layout: single
 | 14   | Cart경로        | 0.1396      | 1.4771    | -0.002249    | 0.016009     | 0.006880  |
 | 14   | Direct경로      | 0.1396      | -1.4771   | -0.016009    | 0.002249     | -0.006880 |
 | 14   | View→Cart      | 1.49E-10    | 6.4063    | 0.001085     | 0.002042     | 0.001563  |
-| 30   | CVR            | 0
