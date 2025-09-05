@@ -18,29 +18,34 @@ layout: single
 ## N일 이내의 구매전환율 (CTV)
 - 주지표에 해당함
 - 1일
+
 | Group | Conversions | Non-Conversions | CVR     |
 |-------|-------------|-----------------|---------|
 | **A** | 6,568       | 797,980         | 0.0082  |
 | **B** | 7,613       | 801,504         | 0.0094  |
 **Result:** B > A (p=0.0000)
+
 ---
 - 7일
+
 | Group | Conversions | Non-Conversions | CVR     |
 |-------|-------------|-----------------|---------|
 | **A** | 6,927       | 797,621         | 0.0086  |
 | **B** | 7,965       | 801,152         | 0.0098  |
-
 **Result:** B > A (p=0.0000)
+
 ---
 - 14일
+
 | Group | Conversions | Non-Conversions | CVR     |
 |-------|-------------|-----------------|---------|
 | **A** | 7,027       | 797,521         | 0.0087  |
 | **B** | 8,092       | 801,025         | 0.0100  |
-
 **Result:** B > A (p=0.0000)
+
 ---
 - 30일
+
 | Group | Conversions | Non-Conversions | CVR     |
 |-------|-------------|-----------------|---------|
 | **A** | 7,096       | 797,452         | 0.0088  |
@@ -51,27 +56,34 @@ layout: single
 ### View→Cart
 - 보조지표에 해당됨
 - 1일
+
 | Group | View→Cart | No Cart   | Rate   |
 |-------|-----------|-----------|--------|
 | **A** | 18,027    | 786,521   | 0.0224 |
 | **B** | 19,363    | 789,754   | 0.0239 |
 **Result:** B > A (p=0.0000)
+
 ---
 - 7일
+
 | Group | View→Cart | No Cart   | Rate   |
 |-------|-----------|-----------|--------|
 | **A** | 19,000    | 785,548   | 0.0236 |
 | **B** | 20,380    | 788,737   | 0.0252 |
 **Result:** B > A (p=0.0000)
+
 ---
 - 14일
+
 | Group | View→Cart | No Cart   | Rate   |
 |-------|-----------|-----------|--------|
 | **A** | 19,189    | 785,359   | 0.0239 |
 | **B** | 20,563    | 788,554   | 0.0254 |
 **Result:** B > A (p=0.0000)
+
 ---
 - 30일
+
 | Group | View→Cart | No Cart   | Rate   |
 |-------|-----------|-----------|--------|
 | **A** | 19,306    | 785,242   | 0.0240 |
@@ -80,11 +92,13 @@ layout: single
 
 ### Cart→Purchase
 - 1일
+
 | Group | Purchase | No Purchase | Rate   |
 |-------|----------|-------------|--------|
 | **A** | 5,558    | 12,469      | 0.3083 |
 | **B** | 6,545    | 12,818      | 0.3380 |
 **Result:** B > A (p=0.0000)
+
 ---
 - 7일
 | Group | Purchase | No Purchase | Rate   |
@@ -92,6 +106,7 @@ layout: single
 | **A** | 6,250    | 12,750      | 0.3289 |
 | **B** | 7,250    | 13,130      | 0.3557 |
 **Result:** B > A (p=0.0000)
+
 ---
 - 14일
 | Group | Purchase | No Purchase | Rate   |
@@ -99,6 +114,7 @@ layout: single
 | **A** | 6,357    | 12,832      | 0.3313 |
 | **B** | 7,382    | 13,181      | 0.3590 |
 **Result:** B > A (p=0.0000)
+
 ---
 - 30일
 | Group | Purchase | No Purchase | Rate   |
@@ -115,6 +131,7 @@ layout: single
 | **A** | 597             | 5,558     | 0.0970 |
 | **B** | 616             | 6,545     | 0.0860 |
 **Result:** A > B (p=0.0282)
+
 ---
 - 7일
 | Group | Direct Purchase | No Direct | Rate   |
@@ -122,6 +139,7 @@ layout: single
 | **A** | 645             | 6,282     | 0.0935 |
 | **B** | 681             | 7,254     | 0.0858 |
 **Result:** A > B (p=0.1030, not significant)
+
 ---
 - 14일
 | Group | Direct Purchase | No Direct | Rate   |
@@ -129,6 +147,7 @@ layout: single
 | **A** | 654             | 6,363     | 0.0932 |
 | **B** | 698             | 7,388     | 0.0863 |
 **Result:** A > B (p=0.1396, not significant)
+
 ---
 - 30일
 | Group | Direct Purchase | No Direct | Rate   |
@@ -144,6 +163,7 @@ layout: single
 | **A** | 5,558     | 597           | 0.9030 |
 | **B** | 6,545     | 616           | 0.9140 |
 **Result:** B > A (p=0.0282)
+
 ---
 - 7일
 | Group | Cart Path | Non-Cart Path | Rate   |
@@ -151,6 +171,7 @@ layout: single
 | **A** | 6,255     | 645           | 0.9065 |
 | **B** | 7,254     | 681           | 0.9142 |
 **Result:** B > A (p=0.1030, not significant)
+
 ---
 - 14일
 | Group | Cart Path | Non-Cart Path | Rate   |
@@ -158,6 +179,7 @@ layout: single
 | **A** | 6,363     | 654           | 0.9068 |
 | **B** | 7,388     | 698           | 0.9137 |
 **Result:** B > A (p=0.1396, not significant)
+
 ---
 - 30일
 | Group | Cart Path | Non-Cart Path | Rate   |
@@ -168,6 +190,7 @@ layout: single
 
 # 2. 데이터 생성
 - 해당 결과를 통합한 시각화용 데이터를 생성
+
 | 기간 | 검정이름        | P-VALUE     | Z통계량   | 신뢰구간_min | 신뢰구간_max | 효과크기   |
 |------|----------------|-------------|-----------|--------------|--------------|-----------|
 | 1    | CVR            | 0           | 8.4755    | 0.000957     | 0.001533     | 0.001245  |
