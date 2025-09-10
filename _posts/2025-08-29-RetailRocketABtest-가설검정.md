@@ -15,6 +15,10 @@ layout: single
 # 1. 가설검정 실시
 [![Hypothesis-Testing.py](https://img.shields.io/badge/code-Hypothesis--Testing.py-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/Hypothesis-Testing.py)
 
+- 귀무가설 (H₀): A와 B 사이의 <지표>에는 유의미한 차이가 없다.
+
+= 대립가설 (H₁): A와 B 사이의 <지표>에는 유의미한 차이가 있다.
+
 <!-- ============================== -->
 <!-- N일 이내의 구매전환율 (CTV)   -->
 <!-- ============================== -->
