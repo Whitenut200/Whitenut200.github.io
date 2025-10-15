@@ -15,7 +15,9 @@ docs:
       - title: "Subway"
         url: /Project/Subway
       - title: "Retail Rocket"
-        url: /Project/Retail Rocket        
+        url: /Project/Retail Rocket
+      - title: "Review"
+        url: /Project/Review        
       - title: "Makeovermonday"
         url: /Project/Makeovermonday
       - title: "Data+"
