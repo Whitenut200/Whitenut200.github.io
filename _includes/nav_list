@@ -26,7 +26,7 @@
       <ul>
         {% for category in site.categories %}
                     {% if category[0] == "Review" %}
-                        <li><a href="/Project/Review" class="">Retail Rocket ({{category[1].size}})</a></li>
+                        <li><a href="/Project/Review" class="">Review ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
       </ul>         

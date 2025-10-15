@@ -6,7 +6,7 @@ last_modified_at: 2025-08-27T12:00:00+09:00
 toc: true
 toc_label: "목차"
 toc_sticky: true
-categories: [Prodject,Retail Rocket]
+categories: [Project,Retail Rocket]
 tags: [ecommerce,PostgreSQL, python, ABtest, CTV, Funnel 분석, Path 분석]
 layout: single
 

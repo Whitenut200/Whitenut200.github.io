@@ -6,7 +6,7 @@ last_modified_at: 2025-07-09T11:00:00+09:00
 toc: true
 toc_label: "목차"
 toc_sticky: true
-categories: [Prodject,Another Dashboard]
+categories: [Project,Another Dashboard]
 tags:
   - Tableau
   - POC
