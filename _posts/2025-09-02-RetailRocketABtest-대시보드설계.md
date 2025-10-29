@@ -7,7 +7,7 @@ toc: true
 toc_label: "목차"
 toc_sticky: true
 categories: [Project,Retail Rocket]
-tags: [ecommerce,PostgreSQL, python, ABtest, CTV, Funnel 분석, Path 분석]
+tags: [ecommerce,PostgreSQL, python, ABtest, CVR, Funnel 분석, Path 분석]
 layout: single
 
 ---
@@ -115,10 +115,10 @@ layout: single
 ---
 
 ## 2. 대시보드 설명
-### 1. CTV
+### 1. CVR
 - KPI
   - 매개변수를 통해 기간을 정할 수 있음
-  - KPI와 파이차트, 막대그래프를 통해 CTV에 대한 대략적인 지표 수치 및 추이를 볼 수 있음
+  - KPI와 파이차트, 막대그래프를 통해 CVR 대한 대략적인 지표 수치 및 추이를 볼 수 있음
   - A,B group간의 차이를 잘 보일 수 있도록 설정함
 
 - category
@@ -127,7 +127,7 @@ layout: single
   - 클릭한 카테고리ID가 어떤 것인지 알 수 있도록 따로 표현함
 
 - 가설검정
-  - CTV에 대한 가설검정 결과를 보여주는 내용으로 표는 가설검정과 관련된 수치를 문장은 해당 가설검정 결과에 해당하는 내용을 담고 있음
+  - CVR 대한 가설검정 결과를 보여주는 내용으로 표는 가설검정과 관련된 수치를 문장은 해당 가설검정 결과에 해당하는 내용을 담고 있음
   - 기간에 따라 결과가 바뀐다면 내용도 바뀌도록 설정
 
 ### 2. Funnel Analysis

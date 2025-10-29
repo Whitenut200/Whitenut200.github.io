@@ -7,7 +7,7 @@ toc: true
 toc_label: "목차"
 toc_sticky: true
 categories: [Project,Retail Rocket]
-tags: [ecommerce,PostgreSQL, python, ABtest, CTV, Funnel 분석, Path 분석]
+tags: [ecommerce,PostgreSQL, python, ABtest, CVR, Funnel 분석, Path 분석]
 layout: single
 
 ---
@@ -81,8 +81,8 @@ E-commerce 데이터를 활용해 **기존 UI(A)**와 **리메이크된 UI(B)**�
 ## 9. 주요 특징
 - 실제 데이터에 **가상의 A/B 테스트 환경**을 구성해 분석 수행  
 - **SQL**로 지표 산출, **Python**으로 가설검정, **Tableau**로 시각화 진행  
-- **주요 지표**: N일 이내 구매 전환율 (CTV)  
+- **주요 지표**: N일 이내 구매 전환율 (CVR)  
 - **보조 지표**:  
   - Path 전환율 (Direct: view→purchase, ViaCart: view→cart→purchase)  
   - Funnel 전환율 (view→cart, cart→purchase)  
-- **대시보드 구성**: 총 3개 페이지 (CTV, Path, Funnel)  
+- **대시보드 구성**: 총 3개 페이지 (CVR, Path, Funnel)  

@@ -7,7 +7,7 @@ toc: true
 toc_label: "목차"
 toc_sticky: true
 categories: [Project,Retail Rocket]
-tags: [ecommerce,PostgreSQL, python, ABtest, CTV, Funnel 분석, Path 분석]
+tags: [ecommerce,PostgreSQL, python, ABtest, CVR, Funnel 분석, Path 분석]
 layout: single
 
 ---
@@ -20,9 +20,9 @@ layout: single
 - 대립가설 (H₁): A와 B 사이의 <지표>에는 유의미한 차이가 있다.
 
 <!-- ============================== -->
-<!-- N일 이내의 구매전환율 (CTV)   -->
+<!-- N일 이내의 구매전환율 (CVR)   -->
 <!-- ============================== -->
-<h2>N일 이내의 구매전환율 (CTV)</h2>
+<h2>N일 이내의 구매전환율 (CVR)</h2>
 <p>- 주지표에 해당함</p>
 
 <table>

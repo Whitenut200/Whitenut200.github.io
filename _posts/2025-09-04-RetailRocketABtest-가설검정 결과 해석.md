@@ -7,13 +7,13 @@ toc: true
 toc_label: "목차"
 toc_sticky: true
 categories: [Project,Retail Rocket]
-tags: [ecommerce,PostgreSQL, python, ABtest, CTV, Funnel 분석, Path 분석]
+tags: [ecommerce,PostgreSQL, python, ABtest, CVR, Funnel 분석, Path 분석]
 layout: single
 
 ---
 ## 가설검정
 - 총 3가지 검정 실시
-- 주지표인 **N일 이내의 구매전환율**
+- 주지표인 **N일 이내의 구매전환율(CVR)**
 - 부지표인 **Path**,**Funnel** 두 가지 진행
 - Path 분석 : View -> buy (Direct), View -> cart -> buy (viacart)
 - Funnel 분석 : view -> cart, cart -> buy

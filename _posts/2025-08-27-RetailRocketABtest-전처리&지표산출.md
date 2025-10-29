@@ -7,7 +7,7 @@ toc: true
 toc_label: "목차"
 toc_sticky: true
 categories: [Project,Retail Rocket]
-tags: [ecommerce,PostgreSQL, python, ABtest, CTV, Funnel 분석, Path 분석]
+tags: [ecommerce,PostgreSQL, python, ABtest, CVR, Funnel 분석, Path 분석]
 layout: single
 
 ---
@@ -52,7 +52,7 @@ layout: single
 ## 2. 지표 산출
 [![Metric-calculation.sql](https://img.shields.io/badge/code-Metric--calculation.sql-blue?logo=github)](https://github.com/Whitenut200/Retail-Rocket-ecommerce-ABtest/blob/main/code/Metric-calculation.sql)
 
-### 1. 주지표 — N일 이내 구매전환율, N=1,7,14,30
+### 1. 주지표 — N일 이내 구매전환율(CVR), N=1,7,14,30
 $$
 PCR_{7d} = \frac{count(View \rightarrow Purchase\ (within\ 7d))}{total(View)}
 $$
