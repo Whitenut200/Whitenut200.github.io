@@ -1,8 +1,8 @@
 ---
 title: "[개인] Retail Rocket ABtest 대시보드 - 프로젝트 개요 "
 excerpt: "Retail Rocket 데이터를 가지고 AB test를 진행해보자"
-date: 2025-08-25T12:00:00+09:00
-last_modified_at: 2025-08-25T12:00:00+09:00
+date: 2025-09-28T12:00:00+09:00
+last_modified_at: 2025-09-28T12:00:00+09:00
 toc: true
 toc_label: "목차"
 toc_sticky: true
