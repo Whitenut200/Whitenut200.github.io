@@ -1,8 +1,8 @@
 ---
 title: "[개인] Retail Rocket ABtest 대시보드 - 가설검정 결과 해석"
 excerpt: "가설검정 결과를 해석하고 A,B의 효율적인 결정을 해보자"
-date: 2025-09-04T12:00:00+09:00
-last_modified_at: 2025-09-04T12:00:00+09:00
+date: 2025-10-08T12:00:00+09:00
+last_modified_at: 2025-10-08T12:00:00+09:00
 toc: true
 toc_label: "목차"
 toc_sticky: true

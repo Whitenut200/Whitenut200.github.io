@@ -1,8 +1,8 @@
 ---
 title: "[개인] Retail Rocket ABtest 대시보드 - 대시보드 설계"
 excerpt: "생성한 데이터를 가지고 대시보드를 설계해보자"
-date: 2025-09-02T12:00:00+09:00
-last_modified_at: 2025-09-02T12:00:00+09:00
+date: 2025-10-05T12:00:00+09:00
+last_modified_at: 2025-10-05T12:00:00+09:00
 toc: true
 toc_label: "목차"
 toc_sticky: true

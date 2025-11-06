@@ -1,8 +1,8 @@
 ---
 title: "[개인] Retail Rocket ABtest 대시보드 - 전처리 및 지표산출 "
 excerpt: "Retail Rocket 데이터를 전처리하고 주지표, 보조지표를 선정하여 관련 지표를 산출하자"
-date: 2025-08-27T12:00:00+09:00
-last_modified_at: 2025-08-27T12:00:00+09:00
+date: 2025-09-30T12:00:00+09:00
+last_modified_at: 2025-09-30T12:00:00+09:00
 toc: true
 toc_label: "목차"
 toc_sticky: true
