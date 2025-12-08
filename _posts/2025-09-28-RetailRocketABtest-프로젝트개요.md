@@ -1,5 +1,5 @@
 ---
-title: "[개인] Retail Rocket ABtest 대시보드 - 프로젝트 개요 "
+title: "[개인] 통계적 A/B 테스트 기반 구매 전환율 분석 및 사용자 행동 분석 프로젝트 - 프로젝트 개요 "
 excerpt: "Retail Rocket 데이터를 가지고 AB test를 진행해보자"
 date: 2025-09-28T12:00:00+09:00
 last_modified_at: 2025-09-28T12:00:00+09:00

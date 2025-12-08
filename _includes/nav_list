@@ -32,6 +32,13 @@
       </ul>         
       <ul>
         {% for category in site.categories %}
+                    {% if category[0] == "RFM" %}
+                        <li><a href="/Project/RFM" class="">RFM ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+      </ul>   
+      <ul>
+        {% for category in site.categories %}
                     {% if category[0] == "Makeovermonday" %}
                         <li><a href="/Project/Makeovermonday" class="">Makeovermonday ({{category[1].size}})</a></li>
                     {% endif %}
