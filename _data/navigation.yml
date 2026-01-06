@@ -20,6 +20,8 @@ docs:
         url: /Project/Review    
       - title: "RFM"
         url: /Project/RFM   
+      - title: "Marketing"
+        url: /Project/Marketing   
       - title: "Makeovermonday"
         url: /Project/Makeovermonday
       - title: "Data+"
