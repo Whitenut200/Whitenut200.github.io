@@ -27,6 +27,8 @@ docs:
       - title: "Data+"
         url: /Project/Data
       - title: "Another Dashboard"
-        url: /Project/Another Dashboard                
+        url: /Project/Another Dashboard
+      - title: "Contest"
+        url: /Project/Contest
   - title: 기타
     url: /기타/
