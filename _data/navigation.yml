@@ -30,5 +30,7 @@ docs:
         url: /Project/Another Dashboard
       - title: "Contest"
         url: /Project/Contest
+      - title: "Game"
+        url: /Project/Game
   - title: 기타
     url: /기타/
